@@ -1,0 +1,91 @@
+.package {
+    display: block;
+    height: 700px;
+    background: url(../img/bg-5.jpg) no-repeat top center;
+    background-size: auto; 
+    padding-top: 40px;
+    position: relative;
+    h2 p { line-height: 1.1; }
+    .wr {
+        cursor: pointer;
+        &:hover .text-green {
+            text-decoration: underline;
+        }   
+    }
+    .text-green {
+        color: @color-green;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center; 
+            
+    }
+    &__item {
+        padding-top: 40px;
+        text-align: center;
+        
+        .img-pac {
+            display: inline-block;
+            width: 100%;
+            height: 115px;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            margin-bottom: 10px;           
+        }
+        .block-gray {
+            margin-top: -20px;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            border-radius: 25px;
+            .text-green {
+                .text-cd(16px);
+                font-weight: 400;
+                color: @color-green;
+                padding-bottom: 5px;
+            }
+            .cost {
+                .text-cd(26px);
+                letter-spacing: -1px;
+                font-weight: 400;                
+                padding: 22px 0 18px;
+            }
+        }
+    }
+    @media @tablet-widths {
+        height: auto;
+        background-image: none;
+        background-color: #fff;  
+        padding-bottom: 70px; 
+        .text-green {
+            font-size: 18px;
+        }   
+        &__item {           
+            .img-pac {                
+                width: 100%;
+                height: 80px; 
+                background-size: contain;                       
+            }
+            .block-gray {
+                margin-top: -20px;
+                padding: 40px 5px 20px;               
+                .text-green {
+                   font-size: 14px;
+                }
+                .cost {
+                    font-size: 18px; 
+                    white-space: nowrap;                  
+                }
+            }
+            .button {
+                padding: 18px 10px;
+                width: 90%;
+            }
+        }
+    }
+    @media @mobil-widths {
+        h2 p {font-weight: 500;}
+        .text-green {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.income { 
+    &__block {   
+        height: 770px;
+        padding: 80px 60px 60px;
+        background-color: @color-green;
+        border-radius: 24px;
+        position: relative;
+        background: url(../img/bg-form.png) no-repeat bottom right @color-green;        
+        text-align: center;
+        h2, h2 * {color: #fff;}
+        &:before {
+            content: "";
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: url(../img/ico/i-down.png) no-repeat center 45px #fff;
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            margin-left: -35px;
+        }
+        .subtitle {
+            color: #69d561;
+            background-color: #006a27;
+            padding: 7px 40px 10px;
+            margin: 50px 0 0;
+            .text(20px);
+            font-weight: 300;
+        }
+        .text {
+            .text-cd(20px);
+            color: #69d561;
+            padding: 7px 40px 10px;
+            
+
+        }
+        .result {
+            * {color: #fff;}
+            padding: 50px 0;
+            .title { font-size: 20px; }
+            .value { font-size: 52px; font-weight: 500; }
+        }
+    }
+    @media @tablet-widths {
+        .subtitle {font-size: 18px;}
+        .result {
+            padding: 30px 0;
+            .title { font-size: 20px; min-height: 51px;}
+            .value { font-size: 40px; }
+        }
+    }
+    @media @mobil-widths {
+        &__block {
+            height: auto;
+            background-image: none;
+            background-color: @color-green; 
+            padding: 50px 10px;
+            .text {font-size: 16px; padding: 10px;}
+        }
+        .subtitle {font-size: 16px;}
+        .result {
+            padding: 30px 0 30px;
+            .title { font-size: 18px; min-height: auto;}
+            .value { font-size: 32px; }
+        }
+        
+     }
+    
+}

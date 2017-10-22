@@ -1,0 +1,45 @@
+.first-screen {
+    display: block;
+    background: url(../img/bg-1.jpg) no-repeat top center;
+    background-size: auto;    
+    padding-top: 144px;
+    @media @mobil-widths {
+        background-size: 770px auto;
+        background-position: center 100px;
+        background-color: #f2f7fa;
+    }
+
+    &__header {
+        width: 770px; 
+        height: 706px;
+        padding: 70px;
+
+        .text-green {
+            color: @color-green;
+            font-size: 24px;
+        }
+        
+        .center {	
+            padding-top: 60px;
+        }  
+        @media @tablet-widths {
+            padding: 50px 30px;
+            width: 550px;
+            img { width: 420px; }
+            .text-green {font-size: 18px;}
+            .text-gray {font-size: 18px;}
+        }
+    
+        @media @mobil-widths {
+
+            height: auto;
+            padding: 40px 0px 40px;
+            width: 100%;
+            max-width: 350px;
+            text-align: left;
+            img {  width: 300px; }
+            .text-green {font-size: 16px; padding-right: 40px;}
+            .text-gray {font-size: 14px; text-align: left;}
+        }      
+    }
+}

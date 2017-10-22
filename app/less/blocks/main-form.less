@@ -1,0 +1,32 @@
+.main-form {
+    display: block;
+    height: 754px;
+    background: url(../img/bg-7.jpg) no-repeat top center;
+    background-size: auto; 
+    padding-top: 100px;
+    text-align: center;
+    h2 p { line-height: 1.1; }
+    &__form {
+        padding-top: 40px;
+        .label {
+            display: block;
+            color: #8b949c;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .text {
+            font-size: 14px;
+            color: #7b7b7b;
+        }
+        .button {            
+            margin: 30px auto 10px;
+        }
+    }
+    @media @mobil-widths {
+        height: auto;
+        padding-bottom: @height-footer-mobil;
+        h2 p { font-weight: 500; font-size: 18px;}
+        img {max-width: 150px;}
+        &__form .label, &__form .text { font-size: 14px; }        
+    }
+}

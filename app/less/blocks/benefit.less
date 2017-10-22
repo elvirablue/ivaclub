@@ -1,0 +1,48 @@
+.benefit {
+    display: block;
+    height: 755px;
+    background: url(../img/bg-3.jpg) no-repeat top center;
+    background-size: auto; 
+    padding-top: 20px;
+    .img-iphon {
+        display: block;
+       margin-top: 30px;
+    }
+
+    &__item {
+        text-align: center;
+        padding: 20px 0 20px 40px ;
+        .title {
+            font-size: 22px;
+            font-weight: 500;
+            padding-top: 5px;
+        }
+        .subtitle {
+            font-size: 18px;
+            font-weight: 300;           
+        }        
+    }
+    @media @tablet-widths {
+        padding-top: 90px;
+        .img-iphon {
+            max-width: 280px;
+        }
+        &__item {           
+            padding: 20px 0 20px 30px ;
+            .title, .subtitle { font-size: 18px; }                    
+        }
+    }
+    @media @mobil-widths {
+        height: auto;
+        background-image: none;
+        background-color: #ebf3f7;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        .img-iphon {display: none;}
+        &__item {           
+            padding: 20px 0;
+            .title, .subtitle { font-size: 14px; }                    
+        }
+    }
+   
+}
